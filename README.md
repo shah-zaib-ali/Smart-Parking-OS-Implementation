@@ -173,27 +173,26 @@ Thread 2: HOLDS [Gate B] ──────────────── WAITIN
 </table>
 
 ---
-
 ## 📸 Screenshots
 
 ### Qt Creator — UI Design View
 > The full four-panel dashboard layout visible in the Qt Creator designer.
 
-![UI Design View](Editing_UI.png)
+![UI Design View](<Editing UI.png>)
 
 ---
 
 ### Simulation Running — All Slots Active
 > 5 parking slots lit up green, OS Insight Panel showing live system state, Mutex ON, Semaphore ON.
 
-![Running Simulation](3.png)
+![Running Simulation](<3.png>)
 
 ---
 
 ### Full Simulation Run — 101 Vehicles Processed
 > Auto-generated run to completion. Statistics panel shows live metrics. Gantt chart at the bottom tracks every vehicle's execution timeline.
 
-![View Screen](View_Screen.png)
+![View Screen](<View_Screen.png>)
 
 ---
 
