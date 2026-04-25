@@ -427,35 +427,8 @@ SmartParkingOS/
     └── Smart_Parking_OS_Report.docx
 ```
 
----
 
-## 📌 Work Breakdown
 
-| Milestone | Description | Owner | Sprint |
-|-----------|-------------|-------|--------|
-| **M1 — Architecture** | Shared memory table design, ParkingSlot struct, command parsing | Ali Raza | Week 1 |
-| **M2 — Sync Core** | Semaphore + Mutex wrappers, thread lifecycle (create/join) | Shahzaib Ali | Week 2 |
-| **M3 — GUI Integration** | Qt 5 dashboard, Gantt chart, real-time queue graph | Faris Altaf | Week 2 |
-| **M4 — Debugging** | Race condition stress tests, deadlock verification | Group | Week 3 |
-| **M5 — Final Prep** | Documentation, report, performance benchmarking | Group | Week 4 |
-
----
-
-## 👥 Team
-
-<div align="center">
-
-| | Name | Student ID | Contribution |
-|--|------|-----------|--------------|
-| 👤 | **Shahzaib Ali** | 24K-0529 | Synchronization Core — Semaphores, Mutex, Thread Lifecycle |
-| 👤 | **Faris Altaf** | 24K-0879 | GUI Integration — Qt Dashboard, Gantt Chart, Real-time Graph |
-| 👤 | **Ali Raza** | 24K-0747 | System Architecture — Shared Memory Table, Command Parsing |
-
-**Course:** CS-2006 Operating Systems · **Section:** BCS 4B · **Fast University, Karachi**
-
-</div>
-
----
 
 ## 📚 References
 
@@ -468,9 +441,5 @@ SmartParkingOS/
 ---
 
 <div align="center">
-
-**CS-2006 Operating Systems · Fast University · BCS 4B · 2026**
-
-*"Making the invisible kernel visible — one thread at a time."*
 
 </div>
