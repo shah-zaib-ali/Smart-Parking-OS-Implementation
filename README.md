@@ -451,7 +451,7 @@ SmartParkingOS/
 | 👤 | **Faris Altaf** | 24K-0879 | GUI Integration — Qt Dashboard, Gantt Chart, Real-time Graph |
 | 👤 | **Ali Raza** | 24K-0747 | System Architecture — Shared Memory Table, Command Parsing |
 
-**Course:** CS-2006 Operating Systems · **Section:** BCS 4B · **Bahria University, Karachi**
+**Course:** CS-2006 Operating Systems · **Section:** BCS 4B · **Fast University, Karachi**
 
 </div>
 
@@ -469,7 +469,7 @@ SmartParkingOS/
 
 <div align="center">
 
-**CS-2006 Operating Systems · Bahria University · BCS 4B · 2026**
+**CS-2006 Operating Systems · Fast University · BCS 4B · 2026**
 
 *"Making the invisible kernel visible — one thread at a time."*
 
