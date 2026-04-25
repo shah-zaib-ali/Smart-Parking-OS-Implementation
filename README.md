@@ -192,7 +192,7 @@ Thread 2: HOLDS [Gate B] ──────────────── WAITIN
 ### Full Simulation Run — 101 Vehicles Processed
 > Auto-generated run to completion. Statistics panel shows live metrics. Gantt chart at the bottom tracks every vehicle's execution timeline.
 
-![View Screen](<View_Screen.png>)
+<img src="View_Screen.png" alt="Full Simulation Run" width="100%"/>
 
 ---
 
