@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>1280</width><height>800</height></rect></property>
+  <property name="windowTitle"><string>Ultimate OS Simulator: Smart Parking</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="topLayout">
+      <item>
+       <widget class="QGroupBox" name="grpControl">
+        <property name="title"><string>🎛️ Control Panel</string></property>
+        <layout class="QGridLayout" name="gridLayout1">
+         <item row="0" column="0"><widget class="QPushButton" name="btnStart"><property name="text"><string>Start Simulation</string></property></widget></item>
+         <item row="0" column="1"><widget class="QPushButton" name="btnPause"><property name="text"><string>Pause / Resume</string></property></widget></item>
+         <item row="1" column="0"><widget class="QPushButton" name="btnAdd"><property name="text"><string>Add Vehicle</string></property></widget></item>
+         <item row="1" column="1"><widget class="QCheckBox" name="chkAutoGen"><property name="text"><string>Auto Generate</string></property></widget></item>
+         <item row="2" column="0" colspan="2"><widget class="QSlider" name="sliderSpeed"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="minimum"><number>1</number></property><property name="maximum"><number>5</number></property></widget></item>
+         <item row="3" column="0"><widget class="QPushButton" name="btnToggleMutex"><property name="text"><string>🟢 Mutex ON</string></property><property name="styleSheet"><string>background-color: #34495e; color: white; font-weight: bold;</string></property></widget></item>
+         <item row="3" column="1"><widget class="QPushButton" name="btnToggleSemaphore"><property name="text"><string>🟢 Semaphore ON</string></property><property name="styleSheet"><string>background-color: #34495e; color: white; font-weight: bold;</string></property></widget></item>
+         <item row="4" column="0" colspan="2"><widget class="QPushButton" name="btnDeadlock"><property name="text"><string>☠️ Force System Deadlock</string></property><property name="styleSheet"><string>background-color: black; color: red; font-weight: bold; border: 2px solid red;</string></property></widget></item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="grpParking">
+        <property name="title"><string>🅿️ Parking Area (Critical Section)</string></property>
+        <layout class="QHBoxLayout" name="slotLayout">
+         <item><widget class="QPushButton" name="btnSlot1"><property name="minimumSize"><size><width>60</width><height>60</height></size></property><property name="text"><string>S1</string></property></widget></item>
+         <item><widget class="QPushButton" name="btnSlot2"><property name="minimumSize"><size><width>60</width><height>60</height></size></property><property name="text"><string>S2</string></property></widget></item>
+         <item><widget class="QPushButton" name="btnSlot3"><property name="minimumSize"><size><width>60</width><height>60</height></size></property><property name="text"><string>S3</string></property></widget></item>
+         <item><widget class="QPushButton" name="btnSlot4"><property name="minimumSize"><size><width>60</width><height>60</height></size></property><property name="text"><string>S4</string></property></widget></item>
+         <item><widget class="QPushButton" name="btnSlot5"><property name="minimumSize"><size><width>60</width><height>60</height></size></property><property name="text"><string>S5</string></property></widget></item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="grpDebug">
+        <property name="title"><string>🧪 OS Insight Panel</string></property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item><widget class="QLabel" name="lblState"><property name="text"><string>System State: IDLE</string></property></widget></item>
+         <item><widget class="QLabel" name="lblSem"><property name="text"><string>Semaphore Available: 5</string></property></widget></item>
+         <item><widget class="QLabel" name="lblMutex"><property name="text"><string>Mutex Locked: False</string></property></widget></item>
+         <item><widget class="QLabel" name="lblBlocked"><property name="text"><string>Blocked Threads: 0</string></property></widget></item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="midLayout">
+      <item>
+       <widget class="QGroupBox" name="grpQueues">
+        <property name="title"><string>📋 System Queues</string></property>
+        <layout class="QGridLayout" name="gridLayoutQueues">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblReadyTitle">
+           <property name="text"><string>Ready Queue (Pending)</string></property>
+           <property name="font"><font><bold>true</bold></font></property>
+           <property name="alignment"><set>Qt::AlignCenter</set></property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="lblBlockedTitle">
+           <property name="text"><string>Blocked Queue (Waiting)</string></property>
+           <property name="font"><font><bold>true</bold></font></property>
+           <property name="alignment"><set>Qt::AlignCenter</set></property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QListWidget" name="listReady">
+           <property name="minimumWidth"><number>260</number></property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QListWidget" name="listWaiting">
+           <property name="minimumWidth"><number>260</number></property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="grpStats">
+        <property name="title"><string>📌 Statistics &amp; Logs</string></property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item><widget class="QComboBox" name="comboAlgo">
+          <item><property name="text"><string>FCFS</string></property></item>
+          <item><property name="text"><string>SJF</string></property></item>
+          <item><property name="text"><string>Priority</string></property></item>
+         </widget></item>
+         <item><widget class="QLabel" name="lblMetrics"><property name="text"><string>Created: 0 | Completed: 0 | Avg WT: 0ms | Avg TAT: 0ms</string></property></widget></item>
+         <item><widget class="QLabel" name="lblRunning"><property name="text"><string>Running: None</string></property></widget></item>
+         <item><widget class="QTextEdit" name="txtLog"><property name="readOnly"><bool>true</bool></property></widget></item>
+         <item><widget class="QPushButton" name="btnClear"><property name="text"><string>Clear Logs</string></property></widget></item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QChartView" name="chartView" native="true">
+        <property name="minimumSize"><size><width>350</width><height>0</height></size></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="grpGantt">
+      <property name="title"><string>📊 Gantt Chart (Execution Timeline)</string></property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item><widget class="QGraphicsView" name="ganttView"><property name="maximumHeight"><number>80</number></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header>QtCharts/QChartView</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+</ui>
