@@ -8,16 +8,7 @@
 
 <br/><br/>
 
-```
-              ██████╗  █████╗ ██████╗ ██╗  ██╗     ██████╗ ███████╗
-              ██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝     ██╔═══██╗██╔════╝
-              ██████╔╝███████║██████╔╝█████╔╝      ██║   ██║███████╗
-              ██╔═══╝ ██╔══██║██╔══██╗██╔═██╗      ██║   ██║╚════██║
-              ██║     ██║  ██║██║  ██║██║  ██╗     ╚██████╔╝███████║
-              
-```
-
-# 🅿️ Ultimate Smart Parking OS Simulator
+#  Ultimate Smart Parking OS Simulator
 
 ### *A real-time, multi-threaded visualization of Operating System internals*
 
